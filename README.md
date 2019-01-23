@@ -1,1 +1,1 @@
-# Boilerplate for Vertics projects
+# Infoscreen for Kerttuli's Upper Secondary school
