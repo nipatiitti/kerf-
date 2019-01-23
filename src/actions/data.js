@@ -34,11 +34,11 @@ export const getStops = () => dispatch => {
     .catch(e => console.error(e))
 }
 
-const getStop = id => axios.get(`http://data.foli.fi/siri/sm/${id}`)
+const getStop = id => axios.get(`https://data.foli.fi/siri/sm/${id}`)
 
 export const getBusses = () => dispatch => {
   dispatch(loading(true))
-  axios.get('http://data.foli.fi/siri/vm')
+  axios.get('httsp://data.foli.fi/siri/vm')
     .then(({data}) => {
       if(data.status === 'OK') {
         const busses = data.result.vehicles
