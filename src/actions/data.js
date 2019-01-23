@@ -38,7 +38,7 @@ const getStop = id => axios.get(`https://data.foli.fi/siri/sm/${id}`)
 
 export const getBusses = () => dispatch => {
   dispatch(loading(true))
-  axios.get('httsp://data.foli.fi/siri/vm')
+  axios.get('https://data.foli.fi/siri/vm')
     .then(({data}) => {
       if(data.status === 'OK') {
         const busses = data.result.vehicles
