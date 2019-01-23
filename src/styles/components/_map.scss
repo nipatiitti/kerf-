@@ -27,3 +27,23 @@
         z-index: 400;
     }
 }
+
+.markerstop {
+    z-index: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .4em .6em;
+    background-color: rgba(255, 255, 255, .5);
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 grey;
+    text-align: center;
+
+    &-text {
+        margin: 0;
+        font-size: 1.2em;
+        font-weight: 500;
+        z-index: 400;
+    }
+}

@@ -11,6 +11,51 @@ import L from 'leaflet'
 
 import Stops from '../Stops'
 
+const STOPS = [
+    {
+        id: 133,
+        pos: {
+            lat: 60.44818816,
+            lng: 22.28093279
+        }
+    },
+    {
+        id: 163,
+        pos: {
+            lat: 60.44866539,
+            lng: 22.28069962
+        }
+    },
+    {
+        id: 66,
+        pos: {
+            lat: 60.45148812,
+            lng: 22.28068962
+        }
+    },
+    {
+        id: 114,
+        pos: {
+            lat: 60.4513246,
+            lng: 22.28089541
+        }
+    },
+    {
+        id: 867,
+        pos: {
+            lat: 60.44913849,
+            lng: 22.28618174
+        }
+    },
+    {
+        id: 851,
+        pos: {
+            lat: 60.44961693,
+            lng: 22.28547526
+        }
+    }
+]
+
 class MapComponent extends Component {
     constructor(props) {
         super(props)
@@ -43,6 +88,18 @@ class MapComponent extends Component {
                             })}
                             key={bus.key}
                             position={bus.position}
+                        />
+                    ))
+                }
+                {
+                    STOPS.map(stop => (
+                        <Marker
+                            icon={new L.divIcon({
+                                className: 'markerstop',
+                                html: `<span class="markerstop-text">${stop.id}</span>`
+                            })}
+                            key={stop.id}
+                            position={stop.pos}
                         />
                     ))
                 }
