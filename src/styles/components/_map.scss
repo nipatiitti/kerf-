@@ -1,0 +1,29 @@
+.map {
+    &-container {
+        flex: 2;
+        display: flex;
+        flex-direction: row;
+        margin-top: 6em;
+    }
+
+    &-element {
+        flex: 3;
+    }
+}
+
+.marker {
+    background-color: #f9d369;
+    border: .4em solid #eaab00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+    border-radius: 2em;
+
+    &-text {
+        font-size: 1.5em;
+        font-weight: 600;
+        position: relative;
+        z-index: 400;
+    }
+}
