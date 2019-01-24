@@ -103,6 +103,16 @@ class MapComponent extends Component {
                         />
                     ))
                 }
+                <Marker
+                    icon={new L.divIcon({
+                        className: 'school',
+                        html: '<img src="school.png" />'
+                    })}
+                    position={{
+                        lat: 60.449577, 
+                        lng: 22.283258
+                    }}
+                />
             </Map>
             <Stops stops={this.props.stops} />
         </div>
